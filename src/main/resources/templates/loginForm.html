@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle:wght@400;700&family=Poor+Story&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <style>
+    body {
+      padding-top: 50px;
+      font-family: 'Dongle', sans-serif;
+      font-size: 32px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-control {
+      height: 40px;
+    }
+    .btn-primary {
+      width: 100%;
+      height: 40px;
+    }
+    .signup-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Login</h1>
+
+  <form action="/login" role="form" method="post">
+
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input name="username" type="text" id="username" placeholder="Username" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input name="password" type="password" id="password" placeholder="Password " class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+
+  </form>
+
+  <div class="signup-link">
+    <a href="/joinForm">아직 회원가입을 하지 않으셨나요?</a>
+  </div>
+
+</div>
+
+</body>
+</html>
